@@ -3,7 +3,7 @@
     "version": "1.2.3",
     "displayName": "Scene Scelector",
     "description": "Scene selector on Unity scene overlay",
-    "unity": "2021.3.7",
+    "unity": "2021.3",
     "unityRelease": "f1",
     "documentationUrl": "",
     "changelogUrl": "",
