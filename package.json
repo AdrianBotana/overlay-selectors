@@ -1,0 +1,18 @@
+{
+    "name": "com.adruian.scene-selector",
+    "version": "1.2.3",
+    "displayName": "Scene Scelector",
+    "description": "Scene selector on Unity scene overlay",
+    "unity": "2021.3.7",
+    "unityRelease": "f1",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "dependencies": {},
+    "keywords": [],
+    "author": {
+        "name": "Adrián Botana Pérez",
+        "email": "adruian@gmail.com",
+        "url": "https://www.linkedin.com/in/abotanaperez/"
+    }
+}
