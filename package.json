@@ -4,12 +4,6 @@
     "displayName": "Scene Scelector",
     "description": "Scene selector on Unity scene overlay",
     "unity": "2021.3",
-    "unityRelease": "f1",
-    "documentationUrl": "",
-    "changelogUrl": "",
-    "licensesUrl": "",
-    "dependencies": {},
-    "keywords": [],
     "author": {
         "name": "Adrián Botana Pérez",
         "email": "adruian@gmail.com",
