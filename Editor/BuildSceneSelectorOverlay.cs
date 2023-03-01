@@ -7,19 +7,18 @@ using UnityEngine.UIElements;
 using System.IO;
 using UnityEditor.SceneManagement;
 
-[Overlay(typeof(SceneView), "Scene Selector")]
-public class SceneSelectorOverlay : Overlay
+[Overlay(typeof(SceneView), "Build Scene Selector")]
+public class BuildSceneSelectorOverlay : Overlay
 {
     public override VisualElement CreatePanelContent()
     {
         VisualElement root = new VisualElement();
 
-        foreach (SceneAsset sceneSelector in SceneSelectorAsset.Scenes)
+        foreach (EditorBuildSettingsScene sceneSelector in EditorBuildSettings.scenes)
         {
-            string path = AssetDatabase.GetAssetOrScenePath(sceneSelector);
             var button = new Button();
-            button.clicked += () => EditorSceneManager.OpenScene(path);
-            button.text = Path.GetFileNameWithoutExtension(path);
+            button.clicked += () => EditorSceneManager.OpenScene(sceneSelector.path);
+            button.text = Path.GetFileNameWithoutExtension(sceneSelector.path);
             root.Add(button);
         }
         

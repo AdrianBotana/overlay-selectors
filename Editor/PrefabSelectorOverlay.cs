@@ -7,22 +7,21 @@ using UnityEngine.UIElements;
 using System.IO;
 using UnityEditor.SceneManagement;
 
-[Overlay(typeof(SceneView), "Scene Selector")]
-public class SceneSelectorOverlay : Overlay
+[Overlay(typeof(SceneView), "Prefab Selector")]
+public class PrefabSelectorOverlay : Overlay
 {
     public override VisualElement CreatePanelContent()
     {
         VisualElement root = new VisualElement();
 
-        foreach (SceneAsset sceneSelector in SceneSelectorAsset.Scenes)
+        foreach (GameObject prefab in PrefabSelectorAsset.GameObjects)
         {
-            string path = AssetDatabase.GetAssetOrScenePath(sceneSelector);
             var button = new Button();
-            button.clicked += () => EditorSceneManager.OpenScene(path);
-            button.text = Path.GetFileNameWithoutExtension(path);
+            button.clicked += () => AssetDatabase.OpenAsset(prefab);
+            button.text = prefab.name;
             root.Add(button);
         }
-        
+
         return root;
     }
 }
