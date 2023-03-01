@@ -1,8 +1,8 @@
 {
-    "name": "com.adruian.scene-selector",
-    "version": "1.2.3",
-    "displayName": "Scene Scelector",
-    "description": "Scene selector on Unity scene overlay",
+    "name": "com.adruian.overlay-selectors",
+    "version": "0.0.2",
+    "displayName": "Overlay Selectors",
+    "description": "Overlay selector for Unity (Scene & Prefabs)",
     "unity": "2021.3",
     "author": {
         "name": "Adrián Botana Pérez",
